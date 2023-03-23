@@ -1,4 +1,5 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<hr>
 
 ## Getting Started
 
@@ -22,17 +23,14 @@ The `pages/api` directory is mapped to `/api/*`. Files in this directory are tre
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+<hr>
 
-To learn more about Next.js, take a look at the following resources:
+## Resource and Refference 
+- [Youtube Tutorial](https://www.youtube.com/watch?v=I2dcpatq54o&t=200s)
+- [Sanity](https://www.sanity.io/manage/personal/project/5c4vhp1h)
+- [Setup Tailwind with Next.JS 13](https://tailwindcss.com/docs/guides/nextjs)
+- [Next.JS Documentation](https://nextjs.org/learn/foundations/from-javascript-to-react)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Noted 
+- Before running Sanity please install tailwind in [Sanity project](https://www.sanity.io/blog/build-your-own-blog-with-sanity-and-next-js) file 
+- 
