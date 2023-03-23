@@ -46,6 +46,17 @@ export default function Home() {
   )
 }
 
+export const getServerSideProps = async () => {
+
+  const query = 'hello world'
+
+
+
+
+
+
+}
+
 
 
 
