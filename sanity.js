@@ -4,8 +4,10 @@
 import {
     createImageUrlBuilder,
     createCurrentUserHook,
-    createClient,
+    // createClient,
 } from "next-sanity";
+
+import {createClient} from "@sanity/client";
 
 
 // create a config object

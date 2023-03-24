@@ -4,7 +4,8 @@ import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import Header from '../../components/Header'
-import { sanityClient , urlFor} from '../sanity'
+// import { sanityClient, urlFor } from '../sanity'
+import sanityClient from '../sanity'
 
 
 
@@ -31,8 +32,8 @@ export default function Home({ posts }: Props) {
         <div className="px-10 space-y-5">
           <h1 className='text-6xl max-w-xl font-serif'>
             <span className='underline decoration-black decoration-3'>
-              Medium 
-            </span>{"  "} 
+              Medium
+            </span>{"  "}
             is a place to write, read, and connect
           </h1>
           <h2>
@@ -42,20 +43,45 @@ export default function Home({ posts }: Props) {
 
         <img
           className="hidden md:inline-flex h-32 lg:h-full "
-          src="https://accountabilitylab.org/wp-content/uploads/2020/03/Medium-logo.png" 
-          alt="" 
+          src="https://accountabilitylab.org/wp-content/uploads/2020/03/Medium-logo.png"
+          alt=""
         />
       </div>
       {/* Post */}
-      
-      
+
+
     </div>
   )
 }
 
 // export const getServerSideProps = async () => {
 
-export const getServerSideProps = async() => {
+// export const getServerSideProps = async () => {
+//   const query = `*[_type == "post"]{
+//     _id, 
+//     title,
+//     author-> {
+//       name,
+//       image,
+//     },
+//     description,
+//     mainImage,
+//     slug
+//   }`;
+
+//   const posts = await sanityClient.fetch(query);
+//   return {
+//     props: {
+//       posts,
+//     },
+//   };
+// };
+
+// get query from sanity query url 
+// https://www.sanity.io/docs/query-builder
+
+
+export const getStaticProps = async () => {
   const query = `*[_type == "post"]{
     _id, 
     title,
