@@ -5,18 +5,18 @@ import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import Header from '../../components/Header'
 // import { sanityClient, urlFor } from '../sanity'
-import sanityClient from '../sanity'
+// import sanityClient from '../sanity'
 
 
 
 const inter = Inter({ subsets: ['latin'] })
 
-interface Props {
-  posts: [Post];
-}
+// interface Props {
+//   posts: [Post];
+// }
 
-export default function Home({ posts }: Props) {
-  console.log(posts);
+export default function Home() {
+  // console.log(posts);
   return (
     <div className="max-w-7xl mx-auto">
       <Head>
@@ -81,26 +81,26 @@ export default function Home({ posts }: Props) {
 // https://www.sanity.io/docs/query-builder
 
 
-export const getStaticProps = async () => {
-  const query = `*[_type == "post"]{
-    _id, 
-    title,
-    author-> {
-      name,
-      image,
-    },
-    description,
-    mainImage,
-    slug
-  }`;
+// export const getStaticProps = async () => {
+//   const query = `*[_type == "post"]{
+//     _id, 
+//     title,
+//     author-> {
+//       name,
+//       image,
+//     },
+//     description,
+//     mainImage,
+//     slug
+//   }`;
 
-  const posts = await sanityClient.fetch(query);
-  return {
-    props: {
-      posts,
-    },
-  };
-};
+//   const posts = await sanityClient.fetch(query);
+//   return {
+//     props: {
+//       posts,
+//     },
+//   };
+// };
 
 
 

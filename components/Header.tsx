@@ -12,12 +12,17 @@ function Header() {
             <div className="flex items-center space-x-5">
                 <div>
                     <Link href="/">
-                        <Image
+                        {/* <Image
                         className="w-44 object-contain cursor-pointer" 
                         src= {NavLogo}
                         alt="/" 
                         width = "80"
                         height = "50"
+                        /> */}
+                        <img
+                        className="w-44 object-contain cursor-pointer"
+                        src="https://links.papareact.com/yvf" 
+                        alt="" 
                         />
                     </Link>             
                 </div>
